@@ -1,0 +1,70 @@
+https://www.realtimecolors.com
+https://legacy.reactjs.org/docs/events.html
+
+//index.js
+export const nombre = "Horacio";
+export function saludar(){};
+export const saludar = () => {};
+export default <unValor>
+
+//archivo2.js
+import nombre from "./index.js"
+import {nombre} from "./index.js"
+import unaVariable from "nombre-libreria"
+import ""
+
+console.log(nombre);
+
+
+
+//<div id="root"></div>
+const DOMElement = document.getElementById('root')
+
+//primer elemento del virtual dom
+const VirtualDOMElement = createRoot(DOMElement)
+
+//En la etiqueta que haya en "VirtualDOMElement" dibuja lo que haya en la constante "App"
+VirtualDOMElement.render(<App />)
+
+
+
+
+Tipos de componentes : 
+
+- Estructurales : son los que representan grandes porciones de la aplication o toda. No se suelen repetir. 
+- Reutilizables : son los que voy a querer repetir muchas veces a lo largo de la aplicacion. 
+
+
+
+
+
+function saludar(nombre){
+    console.log("Hola soy " + nombre)
+}
+
+
+saludar("Horacio")
+saludar("Carlos")
+saludar("Florencia")
+
+
+
+
+- componentes : ya esta
+- props : ya esta, falta children
+- hooks : 
+- estados
+- fetch
+
+
+Hooks : Son funciones que comienzan con la palabra "use"
+
+- useState : me da una variable estado (reactiva)
+- useEffect
+- useContext
+- useRef
+
+- useMemo
+- useCallback
+- useReducer
+....
