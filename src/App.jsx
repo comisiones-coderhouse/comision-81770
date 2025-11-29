@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Main from "./components/Main"
@@ -14,7 +15,22 @@ function App() {
   return (
     <>
       <Header />
-      <Main />
+
+      {/* <Main /> */}
+
+      <main className="main">
+
+        <Routes>
+
+          <Route path="/" element={<Main />} />
+          <Route path="/productos" element={<h2>Productos</h2>} />
+          <Route path="/categorias" element={<h2>Categorias</h2>} />
+          <Route path="/:texto" element={<h2>Soy ruta dinamica</h2>} />
+
+        </Routes>
+
+      </main>
+
       <Footer />
     </>
   )

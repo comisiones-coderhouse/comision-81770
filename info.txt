@@ -1,5 +1,8 @@
 https://www.realtimecolors.com
 https://legacy.reactjs.org/docs/events.html
+https://reactrouter.com/
+
+https://www.mercadolibre.com.ar/protector-solar-dermaglos-emulsion-fps50-x-250ml/p/MLA20541182#polycard_client=offers&deal_print_id=a29bd86d-84c4-4ff3-a700-a1bbf829bfdf&position=4&tracking_id=347837cf-6b63-4ce8-8772-556efbac8ce9&wid=MLA1629384350&sid=offers
 
 //index.js
 export const nombre = "Horacio";
@@ -33,9 +36,12 @@ Tipos de componentes :
 
 - Estructurales : son los que representan grandes porciones de la aplication o toda. No se suelen repetir. 
 - Reutilizables : son los que voy a querer repetir muchas veces a lo largo de la aplicacion. 
+- Containers : 
+- Presentacionales : 
 
+- Container Pattern / Patron de diseño 
 
-
+Container -> Presentacional
 
 
 function saludar(nombre){
@@ -52,9 +58,9 @@ saludar("Florencia")
 
 - componentes : ya esta
 - props : ya esta, falta children
-- hooks : 
-- estados
-- fetch
+- hooks : ya esta , falta el useEffect 
+- estados : ya esta, 
+- fetch : 
 
 
 Hooks : Son funciones que comienzan con la palabra "use"
@@ -68,3 +74,56 @@ Hooks : Son funciones que comienzan con la palabra "use"
 - useCallback
 - useReducer
 ....
+
+
+
+Plan de clases : 
+
+- rutas : https://reactrouter.com/
+- useEffect 
+- fetch / async 
+
+
+
+
+
+
+
+components/
+    |_ layout/
+        App
+        Header
+        Footer
+        Main
+    |_ pages
+        |_ about 
+            |_ AboutPage.jsx
+            |_
+    |_ widgets
+        CustomButton
+
+
+
+Entrega 2 : 
+
+- Implementación de React Router : tiene que estar instalado y configurado
+
+- Tienen que haber por lo menos 3 rutas configuradas : 
+
+    - "/" -> Que muestre listado de productos
+    
+    
+    (En la entrega real se pedia "/categoria/:id" )
+    - "/categoria" -> Que muestre listado de categorias / productos filtrados por una categoria 
+    - "/categoria-1" -> Que muestre listado de categorias / productos filtrados por una categoria 
+
+    (En la entrega real se pedia "/item/:id" )
+    - "/item" -> 
+    - "/detalle" -> 
+
+
+Opcional : 
+
+- Implementar useEffect + fetch
+- Implementar rutas dinamicas (osea las que tienen dos puntos ":")\
+- Implementar el useParams (react-router-dom)

@@ -1,5 +1,5 @@
 import Button from "./Button"
-import Contador from "./Contador";
+import Contador from "./ContadorContainer";
 import Popup from "./Popup";
 
 function Main() {
@@ -10,7 +10,7 @@ function Main() {
     const frutas = ["manzana", "banana", "cereza"];
 
     return (
-        <main>
+        <>
             <h2>Bienvenido a mi aplicacion</h2>
             <Button nombre={nombre} edad={edad} isAdmin={isAdmin} frutas={frutas} />
             {/* <Button nombre="Carlos" edad={25} isAdmin={false} frutas={["manzana", "banana", "cereza"]} />
@@ -18,7 +18,7 @@ function Main() {
             <Button nombre="Juan" edad={32} isAdmin={false} frutas={["manzana", "banana", "cereza"]} /> */}
             <Contador />
             <Popup />
-        </main>
+        </>
     )
 }
 
