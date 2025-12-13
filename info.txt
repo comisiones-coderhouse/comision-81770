@@ -124,6 +124,54 @@ Entrega 2 :
 
 Opcional : 
 
-- Implementar useEffect + fetch
+- Implementar  + fetch
 - Implementar rutas dinamicas (osea las que tienen dos puntos ":")\
 - Implementar el useParams (react-router-dom)
+
+
+- 
+
+
+
+API
+
+
+URL BASE : Es el comienzo de la URL para hacer una solicitud
+
+Ej : http://miapi.com/v1
+    https://pokeapi.co/api/v2/
+
+
+ENDPOINTS : Es una palabra que se agrega al final de la URL de base. Son cadauno de los accesso a la API
+
+Ej : URLBASE + /posts
+    https://pokeapi.co/api/v2/pokemon
+    https://pokeapi.co/api/v2/categories
+    https://pokeapi.co/api/v2/colors
+
+
+METODOS/ERRORES: 
+
+
+fetch("https://pokeapi.co/api/v2/pokemon",{
+    method : "POST",
+});
+
+
+const requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+
+fetch("https://dummyjson.com/products", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+
+
+- Context API : para globalizar o centralizar datos - 
+- Firebase
+
+
+AuthProvider-AuthContext
+CartProvider-CartContext
