@@ -5,6 +5,7 @@ import Main from "./components/Main"
 import ProductosPage from "./components/rutas/ProductosPage"
 import CategoriasPage from "./components/rutas/CategoriasPage"
 import DinamicoPage from "./components/rutas/DinamicoPage"
+import CarritoPage from "./components/rutas/CarritoPage"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/productos" element={<ProductosPage />} />
           <Route path="/categorias" element={<CategoriasPage />} />
           <Route path="/:id" element={<DinamicoPage />} />
+          <Route path="/carrito" element={<CarritoPage />} />
         </Routes>
       </main>
       <Footer />
