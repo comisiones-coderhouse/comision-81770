@@ -175,3 +175,34 @@ fetch("https://dummyjson.com/products", requestOptions)
 
 AuthProvider-AuthContext
 CartProvider-CartContext
+
+
+
+
+Entrega Final : 
+
+src/
+    |_ContextProvider.jsx
+        |_App.jsx
+        
+            |_Navbar
+                |_CartWidget
+
+            |_Routes
+                |_Route "/"
+                    |_ItemListContainer.jsx
+                        |_ItemList.jsx
+                            |_Item.jsx
+
+                |_Route "/category/:id"
+                    |_ItemListContainer.jsx
+                        |_ItemList.jsx
+                            |_Item.jsx
+
+                |_Route "/item/:id"
+                    |_ItemDetailContainer.jsx
+                        |_ItemDetail.jsx
+                            |_ItemCount.jsx
+
+                |_Route "/cart"
+                    |_CartPage.jsx

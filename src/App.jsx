@@ -11,6 +11,7 @@ function App() {
   return (
     <>
       <Header />
+
       <main className="main">
         <Routes>
           <Route path="/" element={<Main />} />
@@ -20,7 +21,9 @@ function App() {
           <Route path="/carrito" element={<CarritoPage />} />
         </Routes>
       </main>
+
       <Footer />
+      
     </>
   )
 }
